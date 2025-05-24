@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-base antialiased;
+  }
+  
+  /* Animation delay utilities */
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+  
+  .animation-delay-700 {
+    animation-delay: 700ms;
+  }
+}
+
+@layer components {
+  /* Custom glassmorphism effect */
+  .glass-card {
+    @apply backdrop-blur-lg bg-opacity-20 dark:bg-opacity-10 border border-opacity-20 dark:border-opacity-10;
+  }
+}
