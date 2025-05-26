@@ -12,9 +12,8 @@ import Awards from './components/Awards';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import BackToTop from './components/ui/BackToTop';
-import NeuralBackground from './components/ui/NeuralBackground';
+// import NeuralBackground from './components/ui/NeuralBackground';
 import ParticlesBackground from './components/ParticlesBackground';
-import Mugesh from './components/Mugesh';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -50,7 +49,6 @@ function App() {
             <Contact />
           </main>
           <Footer />
-          <Mugesh />
           <BackToTop isVisible={isVisible} />
         </div>
       </div>
