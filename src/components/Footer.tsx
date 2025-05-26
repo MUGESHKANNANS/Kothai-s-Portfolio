@@ -1,5 +1,7 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Linkedin, BookOpen, Award } from 'lucide-react';
+import Mugesh from '../components/Mugesh';
+
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -106,7 +108,7 @@ const Footer: React.FC = () => {
                   href="mailto:emailtokothaiganesan@gmail.com" 
                   className="hover:dark:text-white hover:text-gray-900 transition-colors"
                 >
-                  emailtokothaiganesan@gmail.com
+                  kothaiganesan@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -134,12 +136,14 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <div className="border-t dark:border-gray-800 border-gray-200 pt-8 text-center">
+        {/* <div className="border-t dark:border-gray-800 border-gray-200 pt-8 text-center">
           <p className="text-sm">
             &copy; {currentYear} Dr. Kothai G. All rights reserved.
           </p>
-        </div>
+        </div> */}
       </div>
+      <Mugesh />
+
     </footer>
   );
 };
